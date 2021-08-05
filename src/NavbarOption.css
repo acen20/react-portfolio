@@ -1,0 +1,16 @@
+.navbar-option {
+  font-weight: normal;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: black;
+  transition: 400ms color ease-in;
+  padding: 20px 10px;
+  min-width: 50px;
+  max-width: 50px;
+  text-overflow: clip;
+}
+
+.navbar-option:hover {
+  color: royalblue;
+}

@@ -1,0 +1,27 @@
+.main {
+  background-position: right;
+  background-image: url("./images/chris.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 20px;
+  margin-top: 20px;
+  height: 400px;
+}
+
+.main-text {
+  width: 500px;
+}
+
+.main-text > p {
+  font-family: "";
+  font-size: 20px;
+  color: grey;
+}
+
+.main-text > h2 {
+  font-family: "";
+  font-size: 14px;
+  color: grey;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
