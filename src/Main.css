@@ -3,13 +3,12 @@
   background-image: url("./images/chris.png");
   background-repeat: no-repeat;
   background-size: contain;
-  padding-left: 20px;
-  margin-top: 20px;
-  height: 400px;
 }
 
 .main-text {
-  width: 500px;
+  padding-left: 10vw;
+  padding-top: 10vw;
+  width: 800px;
 }
 
 .main-text > p {
