@@ -16,6 +16,10 @@ function Main() {
           sciences intriguing and revolutionary.
         </p>
       </div>
+      <div className="main-btns">
+        <button>See projects</button>
+        <button>About me</button>
+      </div>
     </div>
   );
 }

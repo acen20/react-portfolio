@@ -4,7 +4,7 @@ import NavbarOption from "./NavbarOption";
 
 function Navbar() {
   return (
-    <div class="navbar">
+    <div className="navbar">
       <div className="navbar-left">
         <div className="navbar-left-logo">A</div>
         <div className="navbar-left-logo-text">
