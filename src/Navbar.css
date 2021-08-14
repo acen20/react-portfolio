@@ -34,4 +34,5 @@
 
 .navbar-right {
   display: flex;
+  gap: 1em;
 }

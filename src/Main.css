@@ -1,75 +1,53 @@
 .main {
-  background-image: url("./images/chris.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 500px;
-  padding-left: 10vw;
-  padding-top: 10vw;
-  transition: 500ms background ease-out;
-  animation: 1.5s main-img-move;
-}
-
-@keyframes main-img-move {
-  0% {
-    background-position: left;
-  }
-
-  100% {
-    background-position: right;
-  }
+  display: flex;
+  gap: 2em;
+  align-items: center;
 }
 
 .main-text {
-  max-width: 600px;
-  margin-right: 10vw;
+  width: 50%;
 }
 
 .main-text > p {
-  font-size: 20px;
+  font-size: 1.2em;
   color: grey;
-  margin: 0;
-  padding: 0;
   text-align: justify;
 }
 
 .main-text > h2 {
   font-size: 14px;
   color: grey;
-  letter-spacing: 1.2em;
+  letter-spacing: 1vw;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
 }
 
 .main-text > h1 {
   font-weight: bold;
   font-size: 5vw;
-  margin: 0;
-  padding: 0;
 }
 
 .main-btns {
-  margin-top: 20px;
 }
+
 .main-btns > button {
-  border: 2px solid #000;
   font-weight: bold;
   background-color: transparent;
-  border-radius: 20px;
+  border-radius: 10px !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   width: 150px;
   margin-right: 20px;
   padding: 10px;
   transition: 200ms all ease-in;
 }
 
-.main-btns > button:hover {
+.main-btns > button:hover,
+.main-btns > button::selection {
   background-color: black;
   color: white;
 }
 
-@media only screen and (max-width: 1120px) {
-  .main {
-    background: none;
+@media only screen and (max-width: 1000px) {
+  .main-text {
+    width: 100%;
   }
 }

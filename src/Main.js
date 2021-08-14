@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.css";
 import Grid from "@material-ui/core/Grid";
-import portrait from "./images/chris.png";
+import portrait from "./images/guy.jpeg";
 
 function Main() {
   return (
@@ -15,11 +15,13 @@ function Main() {
           career. I see programming as my favorite skill and I find data
           sciences intriguing and revolutionary.
         </p>
+        <div className="main-btns">
+          <button>See projects</button>
+          <button>About me</button>
+        </div>
       </div>
-      <div className="main-btns">
-        <button>See projects</button>
-        <button>About me</button>
-      </div>
+
+      <div className="main-vid-container"></div>
     </div>
   );
 }
