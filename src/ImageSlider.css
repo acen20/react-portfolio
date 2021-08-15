@@ -1,0 +1,8 @@
+.image-slider {
+  display: flex;
+}
+
+.image-slider > img {
+  width: 100%;
+  object-fit: contain;
+}

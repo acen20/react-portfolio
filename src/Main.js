@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css";
 import Grid from "@material-ui/core/Grid";
 import portrait from "./images/guy.jpeg";
+import ImageSlider from "./ImageSlider";
 
 function Main() {
   return (
@@ -21,7 +22,14 @@ function Main() {
         </div>
       </div>
 
-      <div className="main-vid-container"></div>
+      <div className="main-slider-container">
+        <ImageSlider />
+        {/*<video width="320" height="240" autoplay muted>
+          <source src="movie.mp4" type="video/mp4" />
+          <source src="movie.ogg" type="video/ogg" />
+          Your browser does not support the video tag.
+        </video>*/}
+      </div>
     </div>
   );
 }
