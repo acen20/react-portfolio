@@ -5,10 +5,12 @@ import Header from "./Header";
 import Navbar from "./Navbar";
 import SectionHeading from "./SectionHeading";
 import Projects from "./Projects";
+import Loader from "./Loader";
 
 function App() {
   return (
     <div>
+      <Loader />
       <Navbar />
       <Header />
       <SectionHeading title="Featured Projects" />

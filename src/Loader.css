@@ -1,0 +1,124 @@
+.loader-main {
+  margin: 0;
+  background: black;
+  color: whitesmoke;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 102;
+}
+
+.loader-grid {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h2.loader-main-text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+p.loader-main-text {
+  font-weight: bold;
+  animation: heartbeat;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 0.2;
+}
+
+@keyframes heartbeat {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.loader-main-text {
+  text-align: center;
+  clip-path: circle(0px);
+  animation: show-text;
+  transition: all 1s ease-out;
+  animation-duration: 3s;
+  font-size: 44px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.open-text {
+  clip-path: circle(400px);
+  opacity: 1;
+}
+
+.loader-line {
+  height: 1vh;
+  width: 100px;
+  background: blue;
+  animation: move-line;
+  right: 100%;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  position: fixed;
+  animation-timing-function: linear;
+}
+
+.delay-200ms {
+  animation-delay: 200ms;
+  color: yellow;
+  top: 20%;
+}
+.delay-400ms {
+  animation-delay: 400ms;
+  background: green;
+  top: 60%;
+}
+.delay-600ms {
+  animation-delay: 600ms;
+  background: lightblue;
+  top: 10%;
+}
+.delay-800ms {
+  animation-delay: 800ms;
+  background: red;
+  top: 30%;
+}
+.delay-1000ms {
+  animation-delay: 1000ms;
+  background: orange;
+  top: 25%;
+}
+.delay-1200ms {
+  animation-delay: 1200ms;
+  background: teal;
+  top: 80%;
+}
+
+@keyframes show-text {
+  0% {
+    clip-path: circle(0px);
+    opacity: 0;
+  }
+  100% {
+  }
+}
+
+@keyframes move-line {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -50%;
+  }
+}
