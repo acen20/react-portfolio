@@ -1,38 +1,105 @@
-.navbar {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.9);
+nav {
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  z-index: 98;
 }
 
-.navbar-left-logo {
-  border: 3px solid black;
-  object-fit: contain;
-  width: 45px;
-  height: 45px;
-  border-radius: 999px;
-  text-align: center;
-  font-weight: 800;
-  font-size: 22px;
-  margin-right: 10px;
+body > .nav-container:nth-child(1) {
+  position: relative;
 }
 
-.navbar-left {
+.line {
+  width: 30px;
+  height: 3px;
+  background: silver;
+  margin: 5px;
+}
+
+.hamburger {
+  position: fixed;
+  cursor: pointer;
+  right: 5%;
+  top: 5%;
+  transform: translate(-5%, -50%);
+  z-index: 100;
+  transition: all 0.5s ease-out;
+}
+
+.navbar-links {
   display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 100%;
   align-items: center;
+  margin: 0;
+  background: black;
+  height: 100vh;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  padding-top: 10vh;
+  color: whitesmoke;
+  clip-path: circle(100px at 90% -20%);
+  -webkit-clip-path: circle(100px at 90% -20%);
+  transition: all 0.5s ease-out;
+  pointer-events: none;
 }
 
-.navbar-left-logo-text > h1 {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-.navbar-left-logo-text > p {
-  font-size: 12px;
-  letter-spacing: 2px;
-  margin: 0;
-  padding: 0;
+.navbar-links.open {
+  clip-path: circle(100px at 90% -20%);
+  -webkit-clip-path: circle(200% at 90% -20%);
+  pointer-events: all;
 }
 
-.navbar-right {
-  display: flex;
-  gap: 1em;
+.navbar-links > li > a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 56px;
+  font-weight: 900;
+}
+
+.navbar-links > li {
+  transform: translate(-100%);
+}
+
+.navbar-links > li:nth-child(1) {
+  transition: transform 0.2s ease-out;
+}
+
+.navbar-links > li:nth-child(2) {
+  transition: transform 0.4s ease-out;
+}
+.navbar-links > li:nth-child(3) {
+  transition: transform 0.6s ease-out;
+}
+.navbar-links > li:nth-child(4) {
+  transition: transform 0.4s ease-out;
+}
+.navbar-links > li:nth-child(5) {
+  transition: transform 0.2s ease-out;
+}
+
+.navbar-links > h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+}
+
+.navbar-links > p {
+  opacity: 0.7;
+  position: absolute;
+  bottom: 15vh;
+}
+
+li.move-in {
+  transform: translate(0%);
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-links > p {
+    font-size: 12px !important;
+  }
 }

@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900");
 
 * {
   margin: 0;
   font-family: "Roboto";
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +17,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
+  overflow-x: hidden;
+}
+
+.section-heading {
+  color: gray;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-left: 15px;
+  letter-spacing: 2px;
 }
 
 code {

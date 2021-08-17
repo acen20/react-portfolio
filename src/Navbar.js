@@ -1,24 +1,52 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Navbar.css";
-import NavbarOption from "./NavbarOption";
 
 function Navbar() {
-  return (
-    <div className="navbar">
-      <div className="navbar-left">
-        <div className="navbar-left-logo">A</div>
-        <div className="navbar-left-logo-text">
-          <h1>Ahsen Nazir</h1>
-          <p>Data Scientist</p>
-        </div>
-      </div>
+  useEffect(() => {
+    const hamburger = document.querySelector(".hamburger");
+    const lines = document.querySelectorAll(".hamburger .line");
+    const navLinks = document.querySelector(".navbar-links");
+    const links = document.querySelectorAll(".navbar-links li");
 
-      <div className="navbar-right">
-        <NavbarOption title="Home" link="#Home" />
-        <NavbarOption title="Projects" link="#Projects" />
-        <NavbarOption title="Contact" link="#Contact" />
-        <NavbarOption title="Profile" link="#Profile" />
-      </div>
+    links.forEach((link) =>
+      link.addEventListener("click", () => {
+        hamburger.click();
+      })
+    );
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      hamburger.classList.toggle("rotate");
+      for (var i = 0; i < lines.length; i++) lines[i].classList.toggle("white");
+
+      links.forEach((link) => link.classList.toggle("move-in"));
+    });
+  }, []);
+  return (
+    <div className="">
+      <nav>
+        <div className="hamburger">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
+        <ul className="navbar-links">
+          <h4>Menu</h4>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a>Gallery</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <p>©2021 Ahsen Nazir. ♥ - Islamabad, Pakistan</p>
+        </ul>
+      </nav>
     </div>
   );
 }
