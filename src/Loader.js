@@ -20,9 +20,9 @@ function Loader(display) {
               color={"black"}
               speedMultiplier={2}
             />
-            <p className="loader-footer">
+            {/*<p className="loader-footer">
               © 2021 Ahsen Nazir - Islamabad, Pakistan
-            </p>
+            </p>*/}
           </div>
         </div>
         <div className="loader-line"></div>
