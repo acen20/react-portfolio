@@ -60,7 +60,7 @@ p.loader-main-text {
 
 .loader-main-text {
   text-align: center;
-  clip-path: circle(0px);
+  kclip-path: circle(0px);
   animation: show-text;
   transition: all 1s ease-out;
   animation-duration: 3s;
@@ -70,7 +70,7 @@ p.loader-main-text {
 }
 
 .open-text {
-  clip-path: circle(400px);
+  kclip-path: circle(400px);
   opacity: 1;
 }
 
