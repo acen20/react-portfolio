@@ -11,11 +11,13 @@ import Loader from "./Loader";
 function App() {
   const [loading, setloading] = useState(true);
   useEffect(() => {
-    setloading(false);
+    setTimeout(() => {
+      setloading(false);
+    }, 3000);
   }, []);
   return (
     <div>
-      {loading && <Loader />}
+      <Loader display={loading} />
       <Navbar />
       <Header />
       <SectionHeading title="Featured Projects" />
