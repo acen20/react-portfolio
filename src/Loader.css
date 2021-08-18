@@ -100,6 +100,7 @@ p.loader-main-text {
   animation: move-line;
   right: 100%;
   ddisplay: none;
+  background: black !important;
   animation-duration: 0.6s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
