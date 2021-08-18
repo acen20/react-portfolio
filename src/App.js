@@ -11,9 +11,12 @@ import Loader from "./Loader";
 function App() {
   const [loading, setloading] = useState(true);
   useEffect(() => {
-    setTimeout(() => {
+    {
+      /*setTimeout(() => {
       setloading(false);
-    }, 3000);
+    }, 3000);*/
+    }
+    setloading(false);
   }, []);
   return (
     <div>
