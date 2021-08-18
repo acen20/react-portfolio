@@ -69,7 +69,7 @@ p.loader-main-text {
   -jwebkit-clip-path: circle(0px);
   animation: show-text;
   transition: all 1s ease-out;
-  animation-duration: 3s;
+  janimation-duration: 3s;
   font-size: 44px;
   font-weight: 100;
   text-transform: uppercase;
