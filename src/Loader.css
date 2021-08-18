@@ -5,7 +5,6 @@
 .loader-body {
   overflow: hidden;
   position: relative;
-  opacity: 1;
   transition: all 0.4s ease-in;
 }
 
@@ -24,6 +23,13 @@
   height: 100vh;
   display: grid;
   place-items: center;
+}
+
+.loader-grid > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h2.loader-main-text {
@@ -60,7 +66,7 @@ p.loader-main-text {
 
 .loader-main-text {
   text-align: center;
-  kclip-path: circle(0px);
+  -webkit-clip-path: circle(0px);
   animation: show-text;
   transition: all 1s ease-out;
   animation-duration: 3s;
@@ -70,7 +76,7 @@ p.loader-main-text {
 }
 
 .open-text {
-  kclip-path: circle(400px);
+  -webkit-clip-path: circle(400px);
   opacity: 1;
 }
 

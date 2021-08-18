@@ -7,7 +7,6 @@ import Navbar from "./Navbar";
 import SectionHeading from "./SectionHeading";
 import Projects from "./Projects";
 import Loader from "./Loader";
-import ClipLoader from "react-spinners/ClipLoader";
 
 function App() {
   const [loading, setloading] = useState(true);

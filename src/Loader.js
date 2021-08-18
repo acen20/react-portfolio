@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Loader.css";
+import ClipLoader from "react-spinners/ClipLoader";
 
 function Loader(display) {
   return (
@@ -8,8 +9,9 @@ function Loader(display) {
         <div className="loader-grid">
           <div>
             <h4 className="loader-main-text open-text">Please wait</h4>
-            <h2 className="loader-main-text open-text">It will be worth it</h2>
+            <h2 className="loader-main-text open-text"></h2>
             <p className="loader-main-text open-text">loading</p>
+            <ClipLoader loading={display} color={"white"} />
           </div>
         </div>
         <div className="loader-line"></div>
