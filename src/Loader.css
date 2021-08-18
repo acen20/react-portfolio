@@ -66,7 +66,7 @@ p.loader-main-text {
 
 .loader-main-text {
   text-align: center;
-  -webkit-clip-path: circle(0px);
+  -jwebkit-clip-path: circle(0px);
   animation: show-text;
   transition: all 1s ease-out;
   animation-duration: 3s;
@@ -76,7 +76,7 @@ p.loader-main-text {
 }
 
 .open-text {
-  -webkit-clip-path: circle(400px);
+  -jwebkit-clip-path: circle(400px);
   opacity: 1;
 }
 
