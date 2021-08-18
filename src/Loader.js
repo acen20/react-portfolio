@@ -2,9 +2,6 @@ import React, { useEffect } from "react";
 import "./Loader.css";
 
 function Loader(display) {
-  useEffect(() => {
-    document.querySelector(".loader-body").classList.toggle("show-loader");
-  });
   return (
     <div className="loader-body">
       <div className="loader-main">

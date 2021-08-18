@@ -7,20 +7,22 @@ import Navbar from "./Navbar";
 import SectionHeading from "./SectionHeading";
 import Projects from "./Projects";
 import Loader from "./Loader";
+import ClipLoader from "react-spinners/ClipLoader";
 
 function App() {
   const [loading, setloading] = useState(true);
   useEffect(() => {
-    {
-      /*setTimeout(() => {
-      setloading(false);
-    }, 3000);*/
-    }
-    setloading(false);
+    setTimeout(() => {
+      setloading(!loading);
+    }, 3000);
   }, []);
+
+  const turn_on = (e) => {
+    document.querySelector(".app-animation").classList.toggle("eye-comfort");
+  };
   return (
-    <div>
-      <Loader display={loading} />
+    <div className="app-animation">
+      {loading && <Loader loading={loading} size={150} />}
       <Navbar />
       <Header />
       <SectionHeading title="Featured Projects" />

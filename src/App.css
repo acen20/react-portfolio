@@ -1,0 +1,7 @@
+.app-animation {
+  transition: all 1s ease-out;
+}
+
+.eye-comfort {
+  background-color: rgb(255, 255, 102, 1);
+}
