@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setloading(!loading);
-    }, 3000);
+    }, 3500);
   }, []);
 
   const turn_on = (e) => {

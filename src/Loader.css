@@ -8,10 +8,18 @@
   transition: all 0.4s ease-in;
 }
 
+.loader-img {
+  position: fixed;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
 .loader-main {
   margin: 0;
-  background: black;
-  color: whitesmoke;
+  background: rgba(255, 255, 255, 1);
+  color: black;
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -22,7 +30,12 @@
 .loader-grid {
   height: 100vh;
   display: grid;
-  place-items: center;
+  align-items: center;
+}
+
+.loader-footer {
+  position: fixed;
+  bottom: 20px;
 }
 
 .loader-grid > div {
@@ -40,7 +53,7 @@ h2.loader-main-text {
 p.loader-main-text {
   font-weight: bold;
   animation: heartbeat;
-  animation-duration: 3s;
+  animation-duration: 0.7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   opacity: 0.2;
@@ -70,9 +83,9 @@ p.loader-main-text {
   animation: show-text;
   transition: all 1s ease-out;
   janimation-duration: 3s;
-  font-size: 44px;
-  font-weight: 100;
-  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: none;
 }
 
 .open-text {
@@ -83,13 +96,15 @@ p.loader-main-text {
 .loader-line {
   height: 1vh;
   width: 100px;
-  background: blue;
   animation: move-line;
   right: 100%;
+  ddisplay: none;
   animation-duration: 0.6s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .delay-200ms {
@@ -100,7 +115,7 @@ p.loader-main-text {
 .delay-400ms {
   animation-delay: 400ms;
   background: green;
-  top: 60%;
+  top: 65%;
 }
 .delay-600ms {
   animation-delay: 600ms;
