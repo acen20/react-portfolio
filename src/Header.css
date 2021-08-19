@@ -109,6 +109,14 @@
     flex-direction: column;
   }
 
+  .scroll-down {
+    left: 47%;
+    bottom: 51%;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+  }
+
   .slider-container {
     flex: 1 !important;
     width: 100%;
