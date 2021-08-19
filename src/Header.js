@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import RingLoader from "react-spinners/RingLoader";
 
 function Header() {
   return (
@@ -16,9 +17,9 @@ function Header() {
             Ahsen is one of the richest people in the world.
           </p>
         </div>
-        {/*!--<div className = "slider-container">
-	<img src="images/slack.png"></img>
-	<div/>-->*/}
+        <div className="slider-container">
+          <RingLoader size={100} />
+        </div>
       </header>
     </div>
   );

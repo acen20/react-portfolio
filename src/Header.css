@@ -11,6 +11,14 @@
   padding: 25px;
 }
 
+.slider-container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  flex-grow: 0.4;
+  background: black;
+}
+
 .intro-container > * {
   margin: 0;
   padding: 0;
@@ -45,11 +53,15 @@
 
 @media screen and (max-width: 800px) {
   .header {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .slider-container {
+    flex: 1 !important;
+    width: 90%;
+    margin-bottom: 20px;
   }
+
   .intro-container {
     z-index: 2;
   }
