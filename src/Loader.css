@@ -8,6 +8,21 @@
   transition: all 0.4s ease-in;
 }
 
+.loader-logo {
+  animation: rotate-logo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-logo {
+  0% {
+  }
+  100% {
+    transform: rotate3d(55, 55, 1, 360deg);
+  }
+}
+
 .loader-img {
   position: fixed;
   object-fit: cover;
@@ -36,7 +51,7 @@
 .loader-footer {
   position: fixed;
   bottom: 20px;
-  color: silver;
+  color: gray;
 }
 
 .loader-grid > div {
@@ -99,7 +114,7 @@ p.loader-main-text {
   width: 100px;
   animation: move-line;
   right: 100%;
-  ddisplay: none;
+  display: none;
   background: black !important;
   animation-duration: 0.6s;
   animation-iteration-count: infinite;

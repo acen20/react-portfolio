@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import logo from "./images/logo.png";
 import ContactLinks from "./ContactLinks";
 import RingLoader from "react-spinners/RingLoader";
 import SectionHeading from "./SectionHeading";
@@ -9,6 +10,9 @@ function Header() {
   return (
     <div>
       <header className="header">
+        {/*<div className="web-logo">
+          <img src={logo} alt="" />
+        </div>*/}
         <div className="intro-container">
           <div className="intro-top-row">
             <code>S.E.S Member</code>

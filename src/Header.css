@@ -22,6 +22,17 @@
   animation-iteration-count: infinite;
 }
 
+.web-logo {
+  position: absolute;
+  top: 10px;
+  left: 1.5em;
+  z-index: 3;
+}
+
+.web-logo > img {
+  height: 4em;
+}
+
 @keyframes drop-down-animation {
   0% {
     transform: translateY(0px);

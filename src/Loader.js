@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Loader.css";
 import BounceLoader from "react-spinners/BounceLoader";
+import logo from "./images/logo.png";
 
 function Loader(display) {
   return (
@@ -15,11 +16,12 @@ function Loader(display) {
             <h4 className="loader-main-text open-text">Please wait</h4>
             <h2 className="loader-main-text open-text"></h2>
             {/*<p className="loader-main-text open-text">loading</p>*/}
-            <BounceLoader
+            {/*<BounceLoader
               loading={display}
               color={"black"}
               speedMultiplier={2}
-            />
+            />*/}
+            <img className="loader-logo" src={logo} alt="" />
             <p className="loader-footer">
               © 2021 Ahsen Nazir - Islamabad, Pakistan
             </p>
