@@ -8,7 +8,7 @@ import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 
 function Header() {
   return (
-    <div>
+    <div id="home">
       <header className="header">
         {/*<div className="web-logo">
           <img src={logo} alt="" />
@@ -20,6 +20,13 @@ function Header() {
             <code>Helloworld</code>
             <code>Helloworld</code>
             <img src="" alt="" />
+          </div>
+          <div className="neon-squares">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
           <div className="intro">
             <h3>Ahsen Nazir</h3>

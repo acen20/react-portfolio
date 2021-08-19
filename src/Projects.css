@@ -16,6 +16,7 @@
   color: white;
   position: relative;
   overflow: hidden;
+  transition: transform 1s linear;
   background: #00001a;
 }
 
@@ -126,10 +127,13 @@
   z-index: -1;
 }
 
+.projects-container > div:hover {
+}
+
 .projects-container > div:hover > img {
   animation: none !important;
   transform: scale(1.05);
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .projects-container > div:hover > .project-top-row > div > p {

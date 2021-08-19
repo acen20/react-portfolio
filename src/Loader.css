@@ -10,7 +10,7 @@
 
 .loader-logo {
   animation: rotate-logo;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -19,16 +19,8 @@
   0% {
   }
   100% {
-    transform: rotate3d(55, 55, 1, 360deg);
+    transform: rotate(360deg);
   }
-}
-
-.loader-img {
-  position: fixed;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
 }
 
 .loader-main {
@@ -38,7 +30,7 @@
   position: fixed;
   height: 100vh;
   width: 100vw;
-  z-index: 102;
+  z-index: 103;
   max-width: 100vw;
 }
 

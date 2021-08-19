@@ -6,10 +6,6 @@ import logo from "./images/logo.png";
 function Loader(display) {
   return (
     <div className="loader-body">
-      <img
-        className="loader-img"
-        src="https://images.unsplash.com/photo-1533912352517-92dd08116ea4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdoaXRlJTIwd2FsbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
-      ></img>
       <div className="loader-main">
         <div className="loader-grid">
           <div>
