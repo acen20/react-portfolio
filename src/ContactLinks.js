@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactLinks.css";
-import FacebookIcon from "@material-ui/icons/Facebook";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import DraftsSharpIcon from "@material-ui/icons/DraftsSharp";
@@ -10,10 +10,10 @@ function ContactLinks() {
     <div className="contact-links-container">
       <a
         className="contact-link facebook"
-        href="https://facebook.com/acen20"
+        href="https://linkedin.com/in/ahsen-nazir10"
         target="_blank"
       >
-        <FacebookIcon />
+        <LinkedInIcon />
       </a>
       <a
         className="contact-link github"

@@ -11,10 +11,11 @@ function Header() {
       <header className="header">
         <div className="intro-container">
           <div className="intro-top-row">
-            <p>Some brilliance will be placed here</p>
-            <p>Some brilliance will be placed here</p>
-            <p>Some brilliance will be placed here</p>
-            <p>Some brilliance will be placed here</p>
+            <code>S.E.S Member</code>
+            <code>Helloworld</code>
+            <code>Helloworld</code>
+            <code>Helloworld</code>
+            <img src="" alt="" />
           </div>
           <div className="intro">
             <h3>Ahsen Nazir</h3>

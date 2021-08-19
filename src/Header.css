@@ -49,7 +49,19 @@
   display: grid;
   place-items: center;
   flex-grow: 0.4;
-  background: black;
+  background: currentColor;
+}
+
+.intro-top-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.intro-top-row > img {
+  width: 100%;
 }
 
 .intro-container > .intro > * {
