@@ -1,0 +1,76 @@
+.contact-links-container {
+  display: flex;
+  gap: 2em;
+  width: 60%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-link {
+  animation: contact-links-animation forwards;
+  animation-duration: 0.3s;
+  --animation-delay: 3.5s;
+  transform: translateX(-4000%);
+  cursor: pointer;
+}
+
+.contact-link > .MuiSvgIcon-root {
+  font-size: 42px !important;
+}
+
+.contact-links-container > a {
+  color: inherit;
+}
+
+.contact-link:hover {
+  transition: all 0.2s ease-out;
+}
+
+.facebook:hover {
+  color: blue;
+}
+
+.github:hover {
+  color: black;
+}
+
+.twitter:hover {
+  color: lightblue;
+}
+.gmail:hover {
+  color: red;
+}
+
+.contact-round {
+  border-radius: 999px !important;
+}
+
+.contact-link:nth-child(1) {
+  animation-delay: calc(var(--animation-delay));
+}
+.contact-link:nth-child(2) {
+  animation-delay: calc(var(--animation-delay) + 0.3s);
+}
+.contact-link:nth-child(3) {
+  animation-delay: calc(var(--animation-delay) + 0.6s);
+}
+.contact-link:nth-child(4) {
+  animation-delay: calc(var(--animation-delay) + 0.9s);
+}
+
+@keyframes contact-links-animation {
+  0% {
+    transform: translateX(-400%);
+    overflow: hidden;
+  }
+  100% {
+    transform: translateX(0%);
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-links-container {
+    width: 100%;
+  }
+}

@@ -1,13 +1,20 @@
 import React from "react";
 import "./Header.css";
+import ContactLinks from "./ContactLinks";
 import RingLoader from "react-spinners/RingLoader";
+import SectionHeading from "./SectionHeading";
 
 function Header() {
   return (
     <div>
       <header className="header">
         <div className="intro-container">
-          <p>Some brilliance will be placed here</p>
+          <div className="intro-top-row">
+            <p>Some brilliance will be placed here</p>
+            <p>Some brilliance will be placed here</p>
+            <p>Some brilliance will be placed here</p>
+            <p>Some brilliance will be placed here</p>
+          </div>
           <div className="intro">
             <h3>Ahsen Nazir</h3>
             <h1>Web & AI Engineer</h1>
@@ -19,9 +26,8 @@ function Header() {
               centibillionaire, Ahsen is one of the richest people in the world.
             </p>
           </div>
-          <div>
-            <h5>Social links will be placed here</h5>
-          </div>
+          <SectionHeading title={"Connect"} />
+          <ContactLinks />
         </div>
         <div className="slider-container">
           <RingLoader size={100} color={"white"} />
