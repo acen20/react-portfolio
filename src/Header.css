@@ -3,10 +3,36 @@
   display: flex;
   align-items: center;
   gap: 0em;
+  position: relative;
 }
 
 :root {
   --animation-delay: 3.5s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 32px !important;
+  left: 50%;
+  cursor: pointer;
+  animation: drop-down-animation;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes drop-down-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .intro-container {
@@ -28,7 +54,7 @@
 
 .intro-container > .intro > * {
   animation: text-move-in forwards;
-  animation-duration: 0.5s;
+  animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-delay: var(--animation-delay);
   transform: translateX(-100%) translateY(-100%) scale(0);

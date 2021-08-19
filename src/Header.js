@@ -3,6 +3,7 @@ import "./Header.css";
 import ContactLinks from "./ContactLinks";
 import RingLoader from "react-spinners/RingLoader";
 import SectionHeading from "./SectionHeading";
+import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 
 function Header() {
   return (
@@ -32,6 +33,7 @@ function Header() {
         <div className="slider-container">
           <RingLoader size={100} color={"white"} />
         </div>
+        <ExpandMoreOutlinedIcon className="scroll-down" />
       </header>
     </div>
   );
