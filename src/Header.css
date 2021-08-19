@@ -48,7 +48,7 @@
 }
 
 .intro-container > .intro > p {
-  color: gray;
+  color: rgba(0, 0, 0, 0.7);
   text-align: justify;
   font-size: 18px;
   line-height: 1.5em;
@@ -70,7 +70,6 @@
   }
 
   .intro-container > .intro > p {
-    color: gray;
     text-align: justify;
     font-size: 18px;
     line-height: 1.2em;
