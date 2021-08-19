@@ -6,9 +6,12 @@
 }
 
 .intro-container {
-  background: transparent;
+  height: 100vh;
+  background: whitesmoke;
   flex: 0.6;
   padding: 25px;
+  display: grid;
+  place-items: center;
 }
 
 .slider-container {
@@ -24,7 +27,7 @@
   padding: 0;
 }
 
-.intro-container > h3 {
+.intro-container > .intro > h3 {
   color: gray;
   font-weight: 300;
   text-transform: uppercase;
@@ -33,7 +36,7 @@
   margin-bottom: 16px;
 }
 
-.intro-container > h1 {
+.intro-container > .intro > h1 {
   color: #202020;
   font-weight: 900;
   font-size: 72px;
@@ -44,7 +47,7 @@
   line-height: 1em;
 }
 
-.intro-container > p {
+.intro-container > .intro > p {
   color: gray;
   text-align: justify;
   font-size: 18px;
@@ -58,7 +61,7 @@
 
   .slider-container {
     flex: 1 !important;
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -66,14 +69,14 @@
     z-index: 2;
   }
 
-  .intro-container > p {
+  .intro-container > .intro > p {
     color: gray;
     text-align: justify;
     font-size: 18px;
     line-height: 1.2em;
   }
 
-  .intro-container > h1 {
+  .intro-container > .intro > h1 {
     color: #101010;
     font-weight: 900;
     font-size: 48px;
