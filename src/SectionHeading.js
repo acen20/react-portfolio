@@ -1,9 +1,12 @@
 import React from "react";
 
-function SectionHeader({ title }) {
+function SectionHeader({ title, big }) {
   return (
     <div>
-      <h2 className="section-heading">{title && title}</h2>
+      <h2 className="section-heading">
+        <div className={big ? "section-heading-border" : ""}></div>
+        {title && title}
+      </h2>
     </div>
   );
 }

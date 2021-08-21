@@ -1,23 +1,33 @@
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 0em;
-  padding: 15px;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 40px 60px;
   background: transparent;
 }
 
-.project-duration-bgdark {
-  color: white !important;
-}
-
-.projects-container > div {
+.project-container {
   flex-basis: 30%;
   position: relative;
   overflow: hidden;
   transition: transform 1s linear;
   color: whitesmoke;
   border-radius: 1px;
+  box-shadow: 2px 2px 4px darkgray;
+}
+
+.project-container:nth-child(2) {
+  transform: translateX(-90%);
+}
+.project-container:nth-child(3) {
+  transform: translateX(-180%);
+}
+.display-project {
+}
+
+.project-duration-bgdark {
+  color: white !important;
 }
 
 .project-top-row {
@@ -53,42 +63,6 @@
   transition: 0.3s font-size ease-in;
 }
 
-.project-detail-link {
-  font-size: 20px;
-  padding: 0px;
-  font-weight: bold;
-}
-
-.project-caselink-container {
-  display: flex !important;
-  opacity: 0;
-  font-weight: bolder;
-  cursor: pointer;
-  gap: 0.5em;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: transparent;
-}
-
-.project-caselink-container > * {
-  padding: 0;
-  margin: 0;
-}
-
-.project-caselink-container > .material-icons {
-  font-size: 24px;
-  transform: rotate(90deg);
-  padding-top: 0px;
-}
-
-.project-caselink-container > h4 {
-  font-weight: light;
-}
-
 .project-top-row > div > * {
   margin: 0;
 }
@@ -120,13 +94,12 @@
   width: 100%;
   object-fit: contain;
   transition: all 0.3s ease-out;
-  background-color: white;
 }
 
 .projects-container > div:hover .project-image {
   animation: none !important;
   transform: scale(1.05);
-  opacity: 0;
+  opacity: 1;
 }
 
 .projects-container > div:hover > .project-top-row > div > p {
@@ -149,6 +122,7 @@
   animation-name: animate-me;
   animation-duration: 0.6s;
   opacity: 0.8;
+  display: none;
 }
 
 h4.project-detail-link > p {

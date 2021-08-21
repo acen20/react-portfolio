@@ -24,7 +24,7 @@ function App() {
       {loading && <Loader loading={loading} size={150} />}
       <Navbar />
       <Header />
-      <SectionHeading title="Featured Projects" />
+      <SectionHeading title="Featured Projects" big />
       <Projects />
     </div>
   );
