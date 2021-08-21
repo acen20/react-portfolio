@@ -1,9 +1,9 @@
 import React from "react";
 import "./Projects.css";
-import netflix from "./images/netflix.png";
-import slack from "./images/slack.png";
-import spotify from "./images/spotify.png";
-import police_shootings from "./images/police_shootings.png";
+import netflix from "./images/t_netflix.png";
+import slack from "./images/t_slack.png";
+import spotify from "./images/t_spotify.png";
+import police_shootings from "./images/t_police_shootings.png";
 import NavigationSharpIcon from "@material-ui/icons/NavigationSharp";
 
 function Projects() {
@@ -16,7 +16,7 @@ function Projects() {
         <div className="project-top-row">
           <div>
             <p>July 2021</p>
-            <h2>Slack - social app for chatting</h2>
+            <h2>Slack - social app for chat</h2>
           </div>
 
           <div className="project-badge">
@@ -32,8 +32,8 @@ function Projects() {
         <img className="project-image" src={spotify} />
         <div className="project-top-row">
           <div>
-            <p className="project-duration-bgdark">July 2021</p>
-            <h2>Spotify - web player UI and authentication</h2>
+            <p className="">July 2021</p>
+            <h2>Spotify - web player UI and auth</h2>
           </div>
           <div className="project-badge">
             <h4>New</h4>
