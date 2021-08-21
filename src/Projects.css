@@ -2,10 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;
+  gap: 0em;
   padding: 15px;
   background: transparent;
-  background: whitesmoke;
 }
 
 .project-duration-bgdark {
@@ -17,10 +16,8 @@
   position: relative;
   overflow: hidden;
   transition: transform 1s linear;
-  background: d#00001a;
-  border-bottom: 2px solid silver;
-  color: black;
-  border-radius: 10px;
+  color: whitesmoke;
+  border-radius: 1px;
 }
 
 .project-top-row {
@@ -123,16 +120,7 @@
   width: 100%;
   object-fit: contain;
   transition: all 0.3s ease-out;
-}
-
-.projects-container > div::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: #00001a;
-  position: absolute;
-  background-color: blue;
-  z-index: -1;
+  background-color: white;
 }
 
 .projects-container > div:hover .project-image {
@@ -167,7 +155,6 @@ h4.project-detail-link > p {
   font-size: 20px;
   padding: 0px;
   margin-bottom: -5px;
-  color: black;
 }
 
 @keyframes animate-me {
