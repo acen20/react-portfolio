@@ -76,6 +76,40 @@ function Projects() {
           <NavigationSharpIcon className="material-icons" />
         </div>
       </div>
+
+      <div>
+        <img className="project-image" src={police_shootings} />
+        <div className="project-top-row">
+          <div>
+            <p className="">June 2020</p>
+            <h2>Data Viz - USA police shootings</h2>
+          </div>
+          <div className="project-badge">
+            <h4>Gold</h4>
+          </div>
+        </div>
+        <div className="project-caselink-container">
+          <h4 className="project-detail-link">View Detail</h4>
+          <NavigationSharpIcon className="material-icons" />
+        </div>
+      </div>
+
+      <div>
+        <img className="project-image" src={police_shootings} />
+        <div className="project-top-row">
+          <div>
+            <p className="">June 2020</p>
+            <h2>Data Viz - USA police shootings</h2>
+          </div>
+          <div className="project-badge">
+            <h4>Gold</h4>
+          </div>
+        </div>
+        <div className="project-caselink-container">
+          <h4 className="project-detail-link">View Detail</h4>
+          <NavigationSharpIcon className="material-icons" />
+        </div>
+      </div>
     </div>
   );
 }

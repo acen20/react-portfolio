@@ -18,10 +18,9 @@
   overflow: hidden;
   transition: transform 1s linear;
   background: d#00001a;
-  background: white;
   border-bottom: 2px solid silver;
   color: black;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .project-top-row {
@@ -130,8 +129,9 @@
   content: "";
   height: 100%;
   width: 100%;
-  background: #d00001a;
+  background: #00001a;
   position: absolute;
+  background-color: blue;
   z-index: -1;
 }
 
@@ -175,6 +175,12 @@ h4.project-detail-link > p {
     margin-top: 14px;
   }
   100% {
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .projects-container > div {
+    flex-basis: 45%;
   }
 }
 
