@@ -25,9 +25,9 @@ body {
   font-weight: 800 !important;
   box-sizing: border-box;
   margin-left: 0.3em;
-  font-size: 50px;
+  font-size: 3em;
   padding-left: 0.3em;
-  margin-top: 0.8em;
+  margin-top: 0.2em;
   border-left: 4px solid currentColor;
 }
 
@@ -40,6 +40,12 @@ body {
   text-align: center;
   position: relative;
   width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-heading-border {
+    font-size: 2em;
+  }
 }
 
 code {
