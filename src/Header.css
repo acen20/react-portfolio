@@ -80,10 +80,13 @@
 
 .intro-top-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 2em;
-  width: 100%;
-  flex-wrap: wrap;
+  display: none;
+}
+
+.intro-top-row > * {
+  flex-basis: 25%;
 }
 
 .intro-top-row > img {

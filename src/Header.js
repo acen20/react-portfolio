@@ -15,11 +15,10 @@ function Header() {
         </div>*/}
         <div className="intro-container">
           <div className="intro-top-row">
-            <code>S.E.S Member</code>
-            <code>Helloworld</code>
-            <code>Helloworld</code>
-            <code>Helloworld</code>
-            <img src="" alt="" />
+            <code>Bahria University (BUIC)</code>
+            <code>PIEAS</code>
+            <code>Freelancer</code>
+            <code>Smart Solutions</code>
           </div>
           <div className="neon-squares">
             <div></div>
