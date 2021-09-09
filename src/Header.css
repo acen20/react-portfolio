@@ -133,6 +133,8 @@
   margin-bottom: 16px;
   letter-spacing: -1px;
   line-height: 1em;
+  position: relative;
+  height: auto;
 }
 
 .neon-squares {
