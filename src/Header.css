@@ -74,7 +74,7 @@
   height: 100vh;
   display: grid;
   place-items: center;
-  flex-grow: 0.4;
+  flex: 0.4;
   background: currentColor;
 }
 
@@ -191,7 +191,7 @@
 
   .intro-container > .intro > p {
     text-align: justify;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.2em;
   }
 

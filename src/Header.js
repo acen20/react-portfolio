@@ -38,7 +38,7 @@ function Header() {
               centibillionaire, Ahsen is one of the richest people in the world.
             </p>
           </div>
-          <SectionHeading title={"Connect"} />
+          <SectionHeading title={"Connect"} big={0} />
           <ContactLinks />
         </div>
         <div className="slider-container">
