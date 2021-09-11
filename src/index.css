@@ -41,7 +41,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .section-heading-border {
-    font-size: 2em;
+    font-size: 1.4em !important;
   }
 }
 
