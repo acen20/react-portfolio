@@ -8,11 +8,12 @@
   animation-duration: 0.5s;
   animation-timing-function: ease-in;
   animation-delay: 3.5s;
+  flex-wrap: wrap;
 }
 
 @keyframes body-fade-in {
   0% {
-    transform: scale(1) rotateX(90deg);
+    transform: rotateX(90deg);
   }
   100% {
     transform: scale(1);
@@ -62,21 +63,20 @@
 .intro-container {
   height: 100vh;
   background: whitesmoke;
-  flex: 0.7;
   padding: 25px;
   padding-top: 50px;
   padding-bottom: 50px;
   display: grid;
   place-items: center;
+  flex-basis: 60%;
 }
 
 .slider-container {
   height: 100vh;
   display: grid;
   place-items: center;
-  flex: 0.3;
-  flex-grow: 0.6;
   background: currentColor;
+  flex-basis: 40%;
 }
 
 .intro-top-row {
@@ -169,7 +169,6 @@
 
 @media screen and (max-width: 800px) {
   .header {
-    flex-direction: column;
   }
 
   .scroll-down {
@@ -181,12 +180,12 @@
   }
 
   .slider-container {
-    flex: 1 !important;
-    width: 100%;
     margin-bottom: 20px;
+    flex-basis: 100%;
   }
 
   .intro-container {
+    flex-basis: 100%;
     z-index: 2;
   }
 
