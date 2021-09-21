@@ -84,6 +84,7 @@
 .project-image {
   width: 100%;
   object-fit: contain;
+  filter: grayscale(60%);
   transition: all 0.3s ease-out;
 }
 
@@ -91,6 +92,7 @@
   animation: none !important;
   transform: scale(1.05);
   opacity: 1;
+  filter: none;
 }
 
 .projects-container > div:hover > .project-top-row > div > p {
