@@ -9,7 +9,6 @@
 .contact-link {
   animation: contact-links-animation forwards;
   animation-duration: 0.3s;
-  --animation-delay: 3.5s;
   transform: translateX(-4000%);
   cursor: pointer;
 }

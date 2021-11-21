@@ -1,20 +1,23 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
+import { Grid, Container } from "@material-ui/core";
 import Header from "./Header";
 import Navbar from "./Navbar";
 import SectionHeading from "./SectionHeading";
 import Projects from "./Projects";
 import Loader from "./Loader";
+import ML from "./ML";
 
 function App() {
-  const [loading, setloading] = useState(true);
-  useEffect(() => {
+  const [loading, setloading] = useState(false);
+  {
+    /*useEffect(() => {
     setTimeout(() => {
       setloading(!loading);
-    }, 3500);
-  }, []);
+    }, 1000);
+  }, []);*/
+  }
 
   const turn_on = (e) => {
     document.querySelector(".app-animation").classList.toggle("eye-comfort");
@@ -26,6 +29,7 @@ function App() {
       <Header />
       <SectionHeading title="Featured Projects" big="1" />
       <Projects />
+      <ML />
     </div>
   );
 }

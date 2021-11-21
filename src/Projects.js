@@ -73,6 +73,34 @@ function Projects() {
           </div>
         </div>
       </div>
+      <div className="project-container">
+        <div>
+          <img className="project-image" src={police_shootings} />
+          <div className="project-top-row">
+            <div>
+              <p className="project-duration-bgdark">June 2020</p>
+              <h2>Data Viz - USA police shootings</h2>
+            </div>
+            <div className="project-badge">
+              <h4>Gold</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-container">
+        <div>
+          <img className="project-image" src={police_shootings} />
+          <div className="project-top-row">
+            <div>
+              <p className="project-duration-bgdark">June 2020</p>
+              <h2>Data Viz - USA police shootings</h2>
+            </div>
+            <div className="project-badge">
+              <h4>Gold</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

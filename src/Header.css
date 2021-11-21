@@ -7,7 +7,7 @@
   animation: body-fade-in forwards;
   animation-duration: 0.5s;
   animation-timing-function: ease-in;
-  animation-delay: 3.5s;
+  animation-delay: var(--animation-delay);
   flex-wrap: wrap;
 }
 
@@ -21,7 +21,7 @@
 }
 
 :root {
-  --animation-delay: 3.5s;
+  --animation-delay: 0.5s;
 }
 
 .scroll-down {
@@ -62,7 +62,6 @@
 
 .intro-container {
   height: 100vh;
-  background: whitesmoke;
   padding: 25px;
   padding-top: 50px;
   padding-bottom: 50px;
