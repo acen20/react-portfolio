@@ -13,7 +13,7 @@ function Projects() {
   };
 
   return (
-    <div id="projects" className="projects-container">
+    <div id="projects" className="projects-container py-5">
       {/*<!--https://res.cloudinary.com/practicaldev/image/fetch/s--BcXcD88z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/5sn1ah1x2i3kh1pqi1kg.jpg-->*/}
 
       <div onClick={display_project} className="project-container">
@@ -55,48 +55,6 @@ function Projects() {
             </div>
             <div className="project-badge">
               <h4>New</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="project-container">
-        <div>
-          <img className="project-image" src={police_shootings} />
-          <div className="project-top-row">
-            <div>
-              <p className="project-duration-bgdark">June 2020</p>
-              <h2>Data Viz - USA police shootings</h2>
-            </div>
-            <div className="project-badge">
-              <h4>Gold</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="project-container">
-        <div>
-          <img className="project-image" src={police_shootings} />
-          <div className="project-top-row">
-            <div>
-              <p className="project-duration-bgdark">June 2020</p>
-              <h2>Data Viz - USA police shootings</h2>
-            </div>
-            <div className="project-badge">
-              <h4>Gold</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="project-container">
-        <div>
-          <img className="project-image" src={police_shootings} />
-          <div className="project-top-row">
-            <div>
-              <p className="project-duration-bgdark">June 2020</p>
-              <h2>Data Viz - USA police shootings</h2>
-            </div>
-            <div className="project-badge">
-              <h4>Gold</h4>
             </div>
           </div>
         </div>

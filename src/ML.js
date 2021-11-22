@@ -161,7 +161,7 @@ function ML() {
             <div className="ml-project-details container">
               <div className="row">
                 <div className="ml-auto ml-project-desc d-flex flex-column justify-content-beteen p-3 col-4">
-                  <p class="pb-4">
+                  <p class="pb-4 ">
                     Feature extraction of sound signals along with complete CNN
                     model fitting and evaluations. The color list of palette. If
                     no color is set in series, the colors would be adopted

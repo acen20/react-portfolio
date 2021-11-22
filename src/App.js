@@ -27,7 +27,7 @@ function App() {
       {loading && <Loader loading={loading} size={150} />}
       <Navbar />
       <Header />
-      <SectionHeading title="Featured Projects" big="1" />
+      <SectionHeading title="FrontEnd" big="1" />
       <Projects />
       <ML />
     </div>
