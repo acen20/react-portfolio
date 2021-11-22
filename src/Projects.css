@@ -1,12 +1,14 @@
+.web-section {
+  bacvkground: url("images/web-section-bg.jpeg");
+  background-size: cover;
+  position: relative;
+}
 .projects-container {
   display: flex;
-  height: 100vh;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1em;
   padding: 10px 15px;
-  background: url("images/web-section-bg.jpeg");
-  background-size: cover;
 }
 
 .project-container {
