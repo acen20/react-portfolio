@@ -1,0 +1,59 @@
+.ml-container {
+  height: 100vh;
+  background-repeat: none;
+  background-size: cover;
+  background-image: url("images/ML-Drone.jpeg");
+}
+
+.ml-sidebar {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #112632 35.94%,
+    rgba(158, 158, 158, 0.205298) 99.99%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-weight: 400;
+}
+
+.ml-project-link {
+  text-decoration: none;
+  color: white !important;
+  width: 100%;
+}
+
+.ml-project-link:hover {
+  text-decoration: none;
+}
+
+.ml-sidebar .selected {
+  font-weight: 700 !important;
+  border-bottom: 4px solid white;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.ml-project-container {
+  height: 100vh;
+}
+
+.ml-project-header {
+  border-bottom: 2px solid white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ml-project-details {
+}
+.ml-project-desc {
+  background-color: #1b1b1b;
+}
+
+.ml-project-graph {
+  background-color: rgba(27, 27, 27, 0.58);
+  min-height: 300px;
+  max-width: 300px;
+}
