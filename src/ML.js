@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./ML.css";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import * as echarts from "echarts";
+import SectionHeading from "./SectionHeading";
 
 // initialize the echarts instance
 
@@ -123,8 +124,9 @@ function ML() {
   return (
     <div className="ml-container bg-dark text-white">
       <div class="row">
-        <div className="ml-sidebar col-3 pt-5">
-          <div className="ml-sidebar-controls p-0">
+        <div className="ml-sidebar col-3">
+          <h2 className="p-2 text-light">Machine Learning</h2>
+          <div className="ml-sidebar-controls p-0  pt-5">
             <div className="p-0 w-85 ml-auto py-2 selected">
               <a href="javascript:load-ml()" class="ml-project-link">
                 Low Flying Objects

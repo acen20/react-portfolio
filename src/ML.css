@@ -3,6 +3,7 @@
   background-repeat: none;
   background-size: cover;
   background-image: url("images/ML-Drone.jpeg");
+  background-attachment: fixed;
 }
 
 .ml-sidebar {
@@ -41,9 +42,10 @@
 }
 
 .ml-project-header {
-  border-bottom: 2px solid white;
-  font-size: 24px;
+  bordder-bottom: 2px solid white;
+  font-size: 48px;
   font-weight: 700;
+  opacity: 0.8;
 }
 
 .ml-project-details {
