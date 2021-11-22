@@ -53,7 +53,11 @@
 }
 
 .ml-project-graph {
-  background-color: rgba(27, 27, 27, 0.58);
-  min-height: 300px;
-  max-width: 300px;
+  background-color: rgba(27, 27, 27, 1.7);
+}
+
+#ml-graph {
+  margin-top: auto;
+  height: 400px;
+  width: 100%;
 }
