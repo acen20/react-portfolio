@@ -29,7 +29,7 @@ function ML() {
         show: false,
       },
       yAxis: {
-        min: 0.4,
+        min: 0.5,
         max: 1,
         splitLine: {
           show: false,
@@ -71,12 +71,13 @@ function ML() {
             0.9411764740943909,
           ],
           type: "line",
-          color: "lime",
+          color: "seagreen",
           lineStyle: {
             width: "3",
           },
           symbolSize: "3",
           symbol: "circle",
+          z: 2,
         },
         {
           name: "Training Accuracy",
@@ -157,7 +158,7 @@ function ML() {
             <h3 className="ml-project-header pb-2 mr-5">Low Flying Objects</h3>
             <div className="ml-project-details container">
               <div className="row">
-                <div className="ml-auto ml-project-desc d-flex flex-column justify-content-beteen p-3 col-6">
+                <div className="ml-auto ml-project-desc d-flex flex-column justify-content-beteen p-3 col-4">
                   <p class="pb-4">
                     Feature extraction of sound signals along with complete CNN
                     model fitting and evaluations. The color list of palette. If
@@ -176,7 +177,7 @@ function ML() {
                     </a>
                   </div>
                 </div>
-                <div className="ml-project-graph col-6">
+                <div className="ml-project-graph col-8">
                   <div class="m-0 pt-4 text-white" id="ml-graph"></div>
                 </div>
               </div>

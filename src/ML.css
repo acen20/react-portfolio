@@ -50,14 +50,16 @@
 }
 .ml-project-desc {
   background-color: #1b1b1b;
+  font-weight: 300;
 }
 
 .ml-project-graph {
   background-color: rgba(27, 27, 27, 1.7);
+  backgrodund-color: black;
 }
 
 #ml-graph {
   margin-top: auto;
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
