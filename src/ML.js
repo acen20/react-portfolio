@@ -26,10 +26,6 @@ function ML() {
         textStyle: {
           color: "#fff",
         },
-
-        selected: {
-          "Validation Accuracy": false,
-        },
       },
       xAxis: {
         type: "category",
@@ -80,9 +76,9 @@ function ML() {
             0.9411764740943909,
           ],
           type: "line",
-          color: "aqua",
+          color: "#00ffff",
           lineStyle: {
-            width: "1",
+            width: "2",
           },
           symbolSize: "3",
           symbol: "circle",
@@ -123,8 +119,8 @@ function ML() {
             0.9924242496490479,
           ],
           type: "scatter",
-          symbolSize: "6",
-          color: "aqua",
+          symbolSize: "8",
+          color: "#00ffff",
         },
       ],
     });
