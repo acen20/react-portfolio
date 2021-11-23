@@ -90,4 +90,9 @@
   .ml-sidebar-controls a {
     white-space: nowrap;
   }
+  .ml-project-header {
+    margin-right: 0px !important;
+    font-size: 1.2rem;
+    display: none;
+  }
 }

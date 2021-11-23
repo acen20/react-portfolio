@@ -182,7 +182,7 @@ function ML() {
                     </a>
                   </div>
                 </div>
-                <div className="ml-project-graph col-lg-8 col-12">
+                <div className="ml-project-graph col-lg-8 col-12 p-0">
                   <div class="m-0 pt-4 text-white" id="ml-graph"></div>
                 </div>
               </div>
