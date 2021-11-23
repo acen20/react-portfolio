@@ -4,7 +4,7 @@
   background-size: cover;
   background-image: url("images/ML-Drone.jpeg");
   background-attachment: fixdsed;
-  overflow: hidden;
+  background-position: right;
 }
 
 .ml-sidebar {
@@ -49,6 +49,7 @@
 
 .ml-project-container {
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .ml-project-header {
@@ -77,6 +78,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .ml-sidebar {
+    z-index: 1;
+  }
   .ml-sidebar-controls {
     display: flex;
     gap: 2em;

@@ -125,9 +125,9 @@ function ML() {
     });
   });
   return (
-    <div className="ml-container bg-dark text-white">
+    <div className="ml-container position-relative bg-dark text-white">
       <div class="row">
-        <div className="ml-sidebar h-auto col-md-3 col-12">
+        <div className="ml-sidebar position-sticky sticky-top h-auto col-md-3 col-12">
           <h2 className="p-2 text-light">Machine Learning</h2>
           <div className="ml-sidebar-controls p-0 d-lg-block pt-lg-5 px-lg-0 px-3">
             <div className="p-0 w-85 ml-auto py-2 selected">
@@ -158,8 +158,8 @@ function ML() {
           </div>
         </div>
 
-        <div className="col-lg-9 col-12 ml-project-container p-lg-5">
-          <div className="bg-darkf h-100 d-flex flex-column justify-content-lg-between justify-content-around align-items-end">
+        <div className="col-lg-9 col-12 ml-project-container p-lg-5 px-1 py-0">
+          <div className=" h-100 d-flex flex-column justify-content-lg-between justify-content-around align-items-end">
             <h3 className="ml-project-header pb-2 mr-5">Low Flying Objects</h3>
             <div className="ml-project-details container">
               <div className="row">
