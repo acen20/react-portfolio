@@ -2,9 +2,9 @@
   min-height: 100vh;
   background-repeat: none;
   background-size: cover;
-  background-image: url("images/ML-Drone.jpeg");
+  background-image: url("images/ML-Drones.jpg");
   background-attachment: fixdsed;
-  background-position: right;
+  background-position: center;
 }
 
 .ml-sidebar {
