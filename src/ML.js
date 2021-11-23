@@ -180,6 +180,18 @@ function ML() {
                       <GitHubIcon className="mr-2" />
                       <div className="d-inline-block">Github</div>
                     </a>
+                    <a
+                      href="https://github.com/acen20/CNN-Tensorflow-Keras-for-sound-classification"
+                      className="p-2 bg-dark text-white shadow-lg ml-2 rounded"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://avatars.githubusercontent.com/u/33467679?s=24&v=4"
+                        alt=""
+                        className="d-inline-block mr-2"
+                      />
+                      <div className="d-inline-block">Colab</div>
+                    </a>
                   </div>
                 </div>
                 <div className="ml-project-graph col-lg-8 col-12 p-0">

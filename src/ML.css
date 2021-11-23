@@ -60,14 +60,19 @@
 }
 
 .ml-project-details {
+  background-color: rgba(27, 27, 27, 0.88);
+  background: rgb(11, 22, 40);
+  background: radial-gradient(
+    circle,
+    rgba(11, 22, 40, 0.8) 0%,
+    rgba(0, 0, 0, 0.96) 100%
+  );
 }
 .ml-project-desc {
-  background-color: #1b1b1b;
   font-weight: 300;
 }
 
 .ml-project-graph {
-  background-color: rgba(27, 27, 27, 1.7);
   backgrodund-color: black;
 }
 
