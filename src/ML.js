@@ -26,6 +26,10 @@ function ML() {
         textStyle: {
           color: "#fff",
         },
+
+        selected: {
+          "Validation Accuracy": false,
+        },
       },
       xAxis: {
         type: "category",
@@ -78,7 +82,7 @@ function ML() {
           type: "line",
           color: "aqua",
           lineStyle: {
-            width: "3",
+            width: "1",
           },
           symbolSize: "3",
           symbol: "circle",

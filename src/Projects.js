@@ -14,7 +14,7 @@ function Projects() {
   };
 
   return (
-    <div id="projects" className="web-section">
+    <div id="projects" className="web-section pb-5">
       <h3 className="section-heading section-heading-border">WEB</h3>
       <div className="projects-container mt-auto">
         {/*<!--https://res.cloudinary.com/practicaldev/image/fetch/s--BcXcD88z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/5sn1ah1x2i3kh1pqi1kg.jpg-->*/}
