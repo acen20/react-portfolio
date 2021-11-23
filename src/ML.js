@@ -125,9 +125,9 @@ function ML() {
     });
   });
   return (
-    <div className="ml-container position-relative bg-dark text-white">
+    <div className="ml-container container-fluid position-relative bg-dark text-white">
       <div class="row">
-        <div className="ml-sidebar position-sticky sticky-top h-auto col-md-3 col-12">
+        <div className="ml-sidebar position-sticky sticky-top col-lg-3 col-12">
           <h2 className="p-2 text-light">Machine Learning</h2>
           <div className="ml-sidebar-controls p-0 d-lg-block pt-lg-5 px-lg-0 px-3">
             <div className="p-0 w-85 ml-auto py-2 selected">
