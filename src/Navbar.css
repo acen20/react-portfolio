@@ -2,7 +2,7 @@ nav {
   height: 10vh;
   background: rgba(255, 255, 255, 0.8);
   position: absolute;
-  z-index: 98;
+  z-index: 100;
 }
 
 body > .nav-container:nth-child(1) {
