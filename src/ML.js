@@ -9,6 +9,9 @@ import SectionHeading from "./SectionHeading";
 function ML() {
   useEffect(() => {
     var myChart = echarts.init(document.getElementById("ml-graph"));
+    window.onresize = () => {
+      myChart.resize();
+    };
     // Draw the chart
     myChart.setOption({
       textStyle: {
@@ -124,9 +127,9 @@ function ML() {
   return (
     <div className="ml-container bg-dark text-white">
       <div class="row">
-        <div className="ml-sidebar col-3">
+        <div className="ml-sidebar h-auto col-md-3 col-12">
           <h2 className="p-2 text-light">Machine Learning</h2>
-          <div className="ml-sidebar-controls p-0  pt-5">
+          <div className="ml-sidebar-controls p-0 d-lg-block pt-lg-5 px-lg-0 px-3">
             <div className="p-0 w-85 ml-auto py-2 selected">
               <a href="javascript:load-ml()" class="ml-project-link">
                 Low Flying Objects
@@ -155,12 +158,12 @@ function ML() {
           </div>
         </div>
 
-        <div className="col-9 ml-project-container p-5">
-          <div className="bg-darkf h-100 d-flex flex-column justify-content-between align-items-end">
+        <div className="col-lg-9 col-12 ml-project-container p-lg-5">
+          <div className="bg-darkf h-100 d-flex flex-column justify-content-lg-between justify-content-around align-items-end">
             <h3 className="ml-project-header pb-2 mr-5">Low Flying Objects</h3>
             <div className="ml-project-details container">
               <div className="row">
-                <div className="ml-auto ml-project-desc d-flex flex-column justify-content-beteen p-3 col-4">
+                <div className="ml-auto ml-project-desc d-flex flex-column justify-content-beteen p-3 col-lg-4 col-12">
                   <p class="pb-4 ">
                     Feature extraction of sound signals along with complete CNN
                     model fitting and evaluations. The color list of palette. If
@@ -171,7 +174,7 @@ function ML() {
                   <div>
                     <a
                       href="https://github.com/acen20/CNN-Tensorflow-Keras-for-sound-classification"
-                      className="p-2 bg-success text-white shadow-lg rounded"
+                      className="p-2 bg-dark text-white shadow-lg rounded"
                       target="_blank"
                     >
                       <GitHubIcon className="mr-2" />
@@ -179,7 +182,7 @@ function ML() {
                     </a>
                   </div>
                 </div>
-                <div className="ml-project-graph col-8">
+                <div className="ml-project-graph col-lg-8 col-12">
                   <div class="m-0 pt-4 text-white" id="ml-graph"></div>
                 </div>
               </div>

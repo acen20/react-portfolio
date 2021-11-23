@@ -1,18 +1,27 @@
 .web-section {
-  bacvkground: url("images/web-section-bg.jpeg");
+  background: url("images/web-section-bg.jpeg");
+  background: currentColor;
   background-size: cover;
   position: relative;
 }
 .projects-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  overflow-x: scroll;
   gap: 1em;
   padding: 10px 15px;
 }
 
+.projects-container::-webkit-scrollbar {
+  background: transparent;
+  height: 5px;
+}
+.projects-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0px;
+}
+
 .project-container {
-  flex-basis: 30%;
+  min-width: 30%;
   position: relative;
   overflow: hidden;
   transition: transform 1s linear;
@@ -88,13 +97,14 @@
 .project-image {
   width: 100%;
   object-fit: contain;
-  filter: grayscale(60%);
+  filter: sepia();
   transition: all 0.3s ease-out;
 }
 
 .projects-container > div:hover .project-image {
   animation: none !important;
-  transform: scale(1.05);
+  transform: scale(1.09);
+  overflow: visible;
   opacity: 1;
   filter: none;
 }
@@ -136,7 +146,7 @@ h4.project-detail-link > p {
 
 @media screen and (max-width: 1070px) {
   .projects-container > div {
-    flex-basis: 45%;
+    min-width: 45%;
   }
 }
 

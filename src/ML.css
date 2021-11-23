@@ -1,13 +1,14 @@
 .ml-container {
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: none;
   background-size: cover;
   background-image: url("images/ML-Drone.jpeg");
-  background-attachment: fixed;
+  background-attachment: fixdsed;
+  overflow: hidden;
 }
 
 .ml-sidebar {
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(
     180deg,
     #112632 35.94%,
@@ -16,6 +17,15 @@
   );
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   font-weight: 400;
+}
+
+.ml-sidebar-controls {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.ml-sidebar-controls::-webkit-scrollbar {
+  display: none;
 }
 
 .ml-project-link {
@@ -62,6 +72,17 @@
 
 #ml-graph {
   margin-top: auto;
-  height: 325px;
-  width: 100%;
+  min-height: 325px;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 800px) {
+  .ml-sidebar-controls {
+    display: flex;
+    gap: 2em;
+    width: auto;
+  }
+  .ml-sidebar-controls a {
+    white-space: nowrap;
+  }
 }
