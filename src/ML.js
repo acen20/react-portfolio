@@ -15,6 +15,7 @@ function ML() {
     };
     // Draw the chart
     myChart.setOption({
+      animationDuration: 4000,
       textStyle: {
         color: "#fff",
       },
@@ -83,7 +84,9 @@ function ML() {
           symbolSize: "3",
           symbol: "circle",
           z: 2,
+          step: "start",
         },
+
         {
           name: "Training Accuracy",
           data: [
