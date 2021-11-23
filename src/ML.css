@@ -86,6 +86,12 @@
   .ml-sidebar {
     height: auto;
     z-index: 1;
+    background: linear-gradient(
+      180deg,
+      #112632 35.94%,
+      rgba(0, 0, 0, 0.8) 99.99%,
+      rgba(196, 196, 196, 0) 100%
+    );
   }
   .ml-sidebar-controls {
     display: flex;
