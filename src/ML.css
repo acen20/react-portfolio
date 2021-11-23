@@ -72,6 +72,11 @@
   font-weight: 300;
 }
 
+.project-link-icon {
+  font-size: 1.125rem;
+  margin-top: -4px;
+}
+
 .ml-project-graph {
   backgrodund-color: black;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./ML.css";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
 import * as echarts from "echarts";
 import SectionHeading from "./SectionHeading";
 
@@ -75,7 +76,7 @@ function ML() {
             0.9411764740943909,
           ],
           type: "line",
-          color: "seagreen",
+          color: "aqua",
           lineStyle: {
             width: "3",
           },
@@ -119,7 +120,7 @@ function ML() {
           ],
           type: "scatter",
           symbolSize: "6",
-          color: "lightgreen",
+          color: "aqua",
         },
       ],
     });
@@ -177,7 +178,7 @@ function ML() {
                       className="p-2 bg-dark text-white shadow-lg rounded"
                       target="_blank"
                     >
-                      <GitHubIcon className="mr-2" />
+                      <GitHubIcon className="project-link-icon mr-2" />
                       <div className="d-inline-block">Github</div>
                     </a>
                     <a
@@ -185,12 +186,8 @@ function ML() {
                       className="p-2 bg-dark text-white shadow-lg ml-2 rounded"
                       target="_blank"
                     >
-                      <img
-                        src="https://avatars.githubusercontent.com/u/33467679?s=24&v=4"
-                        alt=""
-                        className="d-inline-block mr-2"
-                      />
-                      <div className="d-inline-block">Colab</div>
+                      <MenuBookIcon className="project-link-icon mr-2" />
+                      <div className="d-inline-block">Notebook</div>
                     </a>
                   </div>
                 </div>
