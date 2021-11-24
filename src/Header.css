@@ -68,6 +68,12 @@
   display: grid;
   place-items: center;
   flex-basis: 60%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(215, 215, 215, 1) 100%
+  );
 }
 
 .slider-container {
@@ -160,7 +166,7 @@
 }
 
 .intro-container > .intro > p {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.5);
   text-align: justify;
   font-size: 18px;
   line-height: 1.5em;
@@ -194,7 +200,7 @@
   }
 
   .intro-container > .intro > h1 {
-    color: #101010;
+    colodr: #101010;
     font-weight: 900;
     font-size: 48px;
     word-wrap: break-word;

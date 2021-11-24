@@ -26,10 +26,10 @@ body {
   font-weight: 700 !important;
   text-align: center;
   padding-top: 20px;
+  color: whitesmoke;
 }
 
 .section-heading {
-  color: whitesmoke;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 20px;
