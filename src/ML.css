@@ -3,7 +3,7 @@
   background-repeat: none;
   background-size: cover;
   background-image: url("images/ML-Drones.jpg");
-  background-attachment: fixdsed;
+  background-attachment: fidxed;
   background-position: center;
 }
 
@@ -114,5 +114,10 @@
     display: none;
   }
   .ml-container {
+    min-height: unset;
+  }
+  .ml-project-container {
+    max-height: 100vh;
+    height: unset;
   }
 }

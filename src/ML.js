@@ -162,8 +162,8 @@ function ML() {
           </div>
         </div>
 
-        <div className="col-lg-9 col-12 ml-project-container p-lg-5 px-1 py-0">
-          <div className=" h-100 d-flex flex-column justify-content-lg-between justify-content-around align-items-end">
+        <div className="col-lg-9 col-12 ml-project-container p-lg-5 px-md-1 px-0 py-0">
+          <div className=" d-flex flex-column justify-content-lg-between justify-content-around align-items-end">
             <h3 className="ml-project-header pb-2 mr-5">Low Flying Objects</h3>
             <div className="ml-project-details container">
               <div className="row">
