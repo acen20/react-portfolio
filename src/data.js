@@ -15,7 +15,7 @@ export const ml_projects = [
     colab:
       "https://colab.research.google.com/drive/1UPhu0kIQYwl9rAQ5MyybCHG02kB3JYIE?usp=sharing",
     graph_options: {
-      animationDuration: (lfo?.val.length * 1000) / 50,
+      animationDuration: 2000,
       textStyle: {
         color: "#fff",
       },
