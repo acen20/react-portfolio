@@ -185,7 +185,7 @@ function ML() {
                       <div className="d-inline-block">Github</div>
                     </a>
                     <a
-                      href="https://github.com/acen20/CNN-Tensorflow-Keras-for-sound-classification"
+                      href="https://colab.research.google.com/drive/1UPhu0kIQYwl9rAQ5MyybCHG02kB3JYIE?usp=sharing"
                       className="p-2 bg-dark text-white shadow-lg ml-2 rounded"
                       target="_blank"
                     >

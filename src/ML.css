@@ -5,6 +5,8 @@
   background-image: url("images/ML-Drones.jpg");
   background-attachment: fidxed;
   background-position: center;
+  background: linear-gradient(180deg, #fff, #000);
+  border-top: 4px solid orange;
 }
 
 .ml-sidebar {
