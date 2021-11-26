@@ -4,6 +4,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import * as echarts from "echarts";
 import SectionHeading from "./SectionHeading";
+import { ml_projects } from "./data.js";
 
 // initialize the echarts instance
 
@@ -14,119 +15,7 @@ function ML() {
       myChart.resize();
     };
     // Draw the chart
-    myChart.setOption({
-      animationDuration: 4000,
-      textStyle: {
-        color: "#fff",
-      },
-      tooltip: {
-        trigger: "item",
-      },
-      legend: {
-        data: ["Training Accuracy", "Validation Accuracy"],
-        textStyle: {
-          color: "#fff",
-        },
-      },
-      xAxis: {
-        type: "category",
-        scale: true,
-        splitNumber: 5,
-        show: false,
-      },
-      yAxis: {
-        min: 0.5,
-        max: 1,
-        splitLine: {
-          show: false,
-        },
-      },
-      series: [
-        {
-          name: "Validation Accuracy",
-          data: [
-            0.7647058963775635,
-            0.6470588445663452,
-            0.5882353186607361,
-            0.7058823704719543,
-            0.6470588445663452,
-            0.7352941036224365,
-            0.7352941036224365,
-            0.7352941036224365,
-            0.7647058963775635,
-            0.7058823704719543,
-            0.7647058963775635,
-            0.7647058963775635,
-            0.8823529481887817,
-            0.8823529481887817,
-            0.9117646813392639,
-            0.8823529481887817,
-            0.8529411554336548,
-            0.8529411554336548,
-            0.9117646813392639,
-            0.8235294222831726,
-            0.9411764740943909,
-            0.9411764740943909,
-            0.9117646813392639,
-            0.9411764740943909,
-            0.8823529481887817,
-            0.9117646813392639,
-            0.9411764740943909,
-            0.970588207244873,
-            0.9117646813392639,
-            0.9411764740943909,
-          ],
-          type: "line",
-          color: "#00ffff",
-          lineStyle: {
-            width: "2",
-          },
-          symbolSize: "3",
-          symbol: "circle",
-          z: 2,
-          step: "start",
-        },
-
-        {
-          name: "Training Accuracy",
-          data: [
-            0.4545454680919647,
-            0.5833333134651184,
-            0.5909090638160706,
-            0.6212121248245239,
-            0.6515151262283325,
-            0.689393937587738,
-            0.7272727489471436,
-            0.6363636255264282,
-            0.7348484992980957,
-            0.7878788113594055,
-            0.7878788113594055,
-            0.7803030014038086,
-            0.75,
-            0.8030303120613098,
-            0.8484848737716675,
-            0.8257575631141663,
-            0.7803030014038086,
-            0.7272727489471436,
-            0.8030303120613098,
-            0.810606062412262,
-            0.8484848737716675,
-            0.8484848737716675,
-            0.8560606241226196,
-            0.8863636255264282,
-            0.8712121248245239,
-            0.8939393758773804,
-            0.8636363744735718,
-            0.9015151262283325,
-            0.8484848737716675,
-            0.8712121248245239,
-          ],
-          type: "scatter",
-          symbolSize: "8",
-          color: "#00ffff",
-        },
-      ],
-    });
+    myChart.setOption(ml_projects[0].graph_options);
   });
   return (
     <div className="ml-container container-fluid position-relative bg-dark text-white">
