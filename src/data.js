@@ -65,7 +65,104 @@ export const ml_projects = [
         },
       ],
     },
+    cm_options: generate_cm_options(5, 1, 0, 0),
   },
   //2nd project begins here
   {},
 ];
+
+function generate_cm_options(tp, tn, fp, fn) {
+  const x = [1, 0];
+  // prettier-ignore
+  const y = [
+      0,1
+  ];
+  const cm = [tp, tn, fp, fn];
+  const cm_max = Math.max.apply(null, cm);
+  const cm_min = Math.min.apply(null, cm);
+  console.log(cm_max);
+
+  // prettier-ignore
+  const data = [
+    {
+      name:'False Negative',
+      value:[0,0,fn]
+    },
+    {
+      name:'True Negative',
+      value:[1,0,tn]
+    },
+    {
+      name:'False Positive',
+      value:[1,1,fp]
+    },
+    {
+      name: 'True Positive',
+      value:[0,1,tp]
+    }
+  ]
+  let options = {
+    animationDuration: 1000,
+    tooltip: {
+      position: "top",
+      formatter: function (params) {
+        return params.name + ": " + params.data.value[2];
+      },
+      trigger: "item",
+    },
+    grid: {
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      show: false,
+    },
+    xAxis: {
+      type: "category",
+      data: x,
+      splitArea: {
+        show: false,
+      },
+      axisTick: {
+        show: false,
+      },
+      axisLine: {
+        show: false,
+      },
+    },
+    yAxis: {
+      type: "category",
+      data: y,
+      splitArea: {
+        show: false,
+      },
+      axisTick: {
+        show: false,
+      },
+    },
+    visualMap: {
+      type: "continuous",
+      min: cm_min,
+      max: cm_max,
+      show: false,
+      color: ["darkgray", "whitesmoke"],
+    },
+    series: [
+      {
+        type: "heatmap",
+        data: data,
+        label: {
+          show: true,
+        },
+        coordinateSystem: "cartesian2d",
+        emphasis: {
+          itemStyle: {
+            shadowBlur: 10,
+            shadowColor: "rgba(0, 0, 0, 0.5)",
+          },
+        },
+      },
+    ],
+  };
+  return options;
+}

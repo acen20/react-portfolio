@@ -1,0 +1,80 @@
+// prettier-ignore
+const x = [
+   1,0
+];
+// prettier-ignore
+const y = [
+    0,1
+];
+const cm =[25,30,4,25]
+const cm_max = Math.max.apply(null,cm)
+const cm_min = Math.min.apply(null,cm)
+
+// prettier-ignore
+const data = [
+  {
+    name:'False Negative',
+    value:[0,0,5]
+  },
+  {
+    name:'True Negative',
+    value:[1,0,30]
+  },
+  {
+    name:'False Positive',
+    value:[1,1,4]
+  },
+  {
+    name: 'True Positive',
+    value:[0,1,25]
+  }
+]
+
+option = {
+  tooltip: {
+    position: 'top',
+    formatter:function(params){
+       return params.name+": "+params.data.value[2]
+    },
+    trigger:'item'
+  },
+  grid: {
+  },
+  xAxis: {
+    type: 'category',
+    data: x,
+    splitArea: {
+      show: true
+    }
+  },
+  yAxis: {
+    type: 'category',
+    data: y,
+    splitArea: {
+      show: true
+    }
+  },
+  visualMap: {
+    type:'continuous',
+    min:cm_min,
+    max:cm_max,
+    show:false,
+    color:['black', 'whitesmoke']
+  },
+  series: [
+    {
+      type: 'heatmap',
+      data: data,
+      label: {
+        show: true,
+      },
+      coordinateSystem: 'cartesian2d',
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};

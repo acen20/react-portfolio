@@ -11,11 +11,15 @@ import { ml_projects } from "./data.js";
 function ML() {
   useEffect(() => {
     var myChart = echarts.init(document.getElementById("ml-graph"));
+    myChart.setOption(ml_projects[0].graph_options);
+
+    var cm_map = echarts.init(document.getElementById("cm-container"));
+    cm_map.setOption(ml_projects[0].cm_options);
+
     window.onresize = () => {
       myChart.resize();
+      cm_map.resize();
     };
-    // Draw the chart
-    myChart.setOption(ml_projects[0].graph_options);
   });
   return (
     <div className="ml-container container-fluid position-relative bg-dark text-white">
@@ -70,21 +74,24 @@ function ML() {
                       className="p-2 bg-dark text-white shadow-lg rounded"
                       target="_blank"
                     >
-                      <GitHubIcon className="project-link-icon mr-2" />
+                      <GitHubIcon className="project-link-icon mr-1" />
                       <div className="d-inline-block">Github</div>
                     </a>
                     <a
                       href="https://colab.research.google.com/drive/1UPhu0kIQYwl9rAQ5MyybCHG02kB3JYIE?usp=sharing"
-                      className="p-2 bg-dark text-white shadow-lg ml-2 rounded"
+                      className="p-2 bg-dark text-white shadow-lg ml-1 rounded"
                       target="_blank"
                     >
-                      <MenuBookIcon className="project-link-icon mr-2" />
-                      <div className="d-inline-block">Notebook</div>
+                      <MenuBookIcon className="project-link-icon mr-1" />
+                      <div className="d-inline-block">Colab</div>
                     </a>
                   </div>
                 </div>
                 <div className="ml-project-graph col-lg-8 col-12 p-0">
-                  <div class="m-0 pt-4 text-white" id="ml-graph"></div>
+                  <div className="m-0 pt-4 text-white" id="ml-graph"></div>
+                </div>
+                <div className="ml-cm-map col-lg-4 col-12">
+                  <div id="cm-container" className=""></div>
                 </div>
               </div>
             </div>
