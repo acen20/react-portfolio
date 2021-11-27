@@ -110,11 +110,14 @@ function generate_cm_options(tp, tn, fp, fn) {
       show: true,
       text: "CM Accuracy: " + acc,
       padding: 0,
+      top: 0,
       textAlign: "auto",
       left: "45px",
       textStyle: {
         color: "whitesmoke",
       },
+      backgroundColor: "#1b1b1b",
+      width: "100%",
     },
     tooltip: {
       position: "top",
@@ -158,7 +161,7 @@ function generate_cm_options(tp, tn, fp, fn) {
       min: cm_min,
       max: cm_max,
       show: false,
-      color: ["#1b1b1b", "whitesmoke"],
+      color: ["#1b1b1b", "darkred"],
     },
     series: [
       {
