@@ -72,6 +72,9 @@ export const ml_projects = [
 ];
 
 function generate_cm_options(tp, tn, fp, fn) {
+  let acc = parseFloat(tp + tn) / parseFloat(tp + tn + fp + fn);
+  acc = acc.toFixed(3);
+
   const x = [1, 0];
   // prettier-ignore
   const y = [
@@ -103,6 +106,16 @@ function generate_cm_options(tp, tn, fp, fn) {
   ]
   let options = {
     animationDuration: 1000,
+    title: {
+      show: true,
+      text: "CM Accuracy: " + acc,
+      padding: 0,
+      textAlign: "auto",
+      left: "45px",
+      textStyle: {
+        color: "whitesmoke",
+      },
+    },
     tooltip: {
       position: "top",
       formatter: function (params) {
@@ -111,10 +124,10 @@ function generate_cm_options(tp, tn, fp, fn) {
       trigger: "item",
     },
     grid: {
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
+      top: "20px",
+      left: "15px",
+      right: "0",
+      bottom: "20px",
       show: false,
     },
     xAxis: {
@@ -145,7 +158,7 @@ function generate_cm_options(tp, tn, fp, fn) {
       min: cm_min,
       max: cm_max,
       show: false,
-      color: ["darkgray", "whitesmoke"],
+      color: ["#1b1b1b", "whitesmoke"],
     },
     series: [
       {

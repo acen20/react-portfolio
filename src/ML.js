@@ -55,8 +55,8 @@ function ML() {
           </div>
         </div>
 
-        <div className="col-lg-9 col-12 ml-project-container p-lg-5 px-md-1 px-0 py-0">
-          <div className=" d-flex flex-column justify-content-lg-between justify-content-around align-items-end">
+        <div className="col-lg-9 col-12 ml-project-container px-lg-4 px-md-1 px-0 pb-0 pt-4">
+          <div className=" d-flex flex-column justify-content-lg-between justify-content-around align-items-center">
             <h3 className="ml-project-header pb-2 mr-5">Low Flying Objects</h3>
             <div className="ml-project-details container">
               <div className="row">
@@ -91,7 +91,7 @@ function ML() {
                   <div className="m-0 pt-4 text-white" id="ml-graph"></div>
                 </div>
                 <div className="ml-cm-map col-lg-4 col-12">
-                  <div id="cm-container" className=""></div>
+                  <div id="cm-container" className="m-auto"></div>
                 </div>
               </div>
             </div>
