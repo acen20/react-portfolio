@@ -92,7 +92,7 @@ function ML() {
                 </div>
               </div>
               <div class="row pt-lg-4">
-                <div className="col-lg-4 text-light mt-lg-0 mt-3">
+                <div className="col-lg-4 mt-lg-0 mt-3">
                   <h5 className="nlc m-0">Objective</h5>
                   <p>Classify drones based on their acoustic properties</p>
                   <h5 className="nlc m-0">Data</h5>

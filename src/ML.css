@@ -50,6 +50,8 @@
 
 .ml-project-container {
   box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.91);
+  color: #1b1b1b;
 }
 
 .ml-project-header {
@@ -68,11 +70,13 @@
     rgba(0, 0, 0, 0.96) 100%
   );
   border-radius: 4px;
+  background: transparent;
+  color: #1b1b1b;
 }
 
 .ml-project-desc {
   font-weight: 300;
-  border-bottom: 1px dotted white;
+  border-bottom: 2px dotted white;
 }
 
 .project-link-icon {
@@ -82,7 +86,7 @@
 
 .ml-project-graph {
   backgrodund-color: black;
-  border-bottom: 1px dotted gray;
+  border-bottom: 2px dotted gray;
 }
 
 #ml-graph {

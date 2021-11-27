@@ -17,7 +17,7 @@ export const ml_projects = [
     graph_options: {
       animationDuration: 2000,
       textStyle: {
-        color: "#fff",
+        color: "#1b1b1b",
       },
       tooltip: {
         trigger: "item",
@@ -25,7 +25,7 @@ export const ml_projects = [
       legend: {
         data: ["Training Accuracy", "Validation Accuracy"],
         textStyle: {
-          color: "#fff",
+          color: "#1b1b1b",
         },
       },
       xAxis: {
@@ -118,7 +118,7 @@ function generate_cm_options(tp, tn, fp, fn) {
       textAlign: "auto",
       left: "45px",
       textStyle: {
-        color: "whitesmoke",
+        color: "#1b1b1b",
       },
     },
     tooltip: {
@@ -163,7 +163,7 @@ function generate_cm_options(tp, tn, fp, fn) {
       min: cm_min,
       max: cm_max,
       show: false,
-      color: ["darkblue", "whitesmoke"],
+      color: ["seagreen", "lightgreen"],
     },
     series: [
       {
