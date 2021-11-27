@@ -163,7 +163,7 @@ function generate_cm_options(tp, tn, fp, fn) {
       min: cm_min,
       max: cm_max,
       show: false,
-      color: ["#1b1b1b", "darkblue"],
+      color: ["darkblue", "whitesmoke"],
     },
     series: [
       {

@@ -55,7 +55,7 @@ function ML() {
           </div>
         </div>
 
-        <div className="col-lg-9 col-12 ml-project-container px-lg-4 px-md-1 px-0 pb-0 pt-3">
+        <div className="col-lg-9 col-12 ml-project-container px-lg-4 px-md-1 px-0 pb-0 pt-lg-3">
           <div className=" d-flex flex-column justify-content-lg-between justify-content-around align-items-center">
             <h3 className="ml-project-header pb-2 mr-5">Low Flying Objects</h3>
             <div className="ml-project-details container">
@@ -92,7 +92,7 @@ function ML() {
                 </div>
               </div>
               <div class="row pt-lg-4">
-                <div className="col-lg-4" style={{ color: "#888" }}>
+                <div className="col-lg-4 text-light mt-lg-0 mt-3">
                   <h5 className="nlc m-0">Objective:</h5>
                   <p>Classify drones based on their acoustic properties</p>
                   <h5 className="nlc m-0">Data:</h5>
@@ -105,8 +105,8 @@ function ML() {
                     <b>88</b> Noisy samples
                   </p>
                 </div>
-                <div className="ml-cm-map p-0 m-0 col-lg-4 col-12">
-                  <div id="cm-container" className="m-auto"></div>
+                <div className="ml-cm-map p-0 m-0 mt-lg-0 mt-3 col-lg-4 col-12">
+                  <div id="cm-container" className="ml-2"></div>
                 </div>
               </div>
             </div>
