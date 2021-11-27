@@ -87,10 +87,25 @@ function ML() {
                     </a>
                   </div>
                 </div>
-                <div className="ml-project-graph col-lg-8 col-12 p-0">
+                <div className="ml-project-graph col-lg-8 col-12 p-0 ">
                   <div className="m-0 pt-4 text-white" id="ml-graph"></div>
                 </div>
-                <div className="ml-cm-map col-lg-4 col-12">
+              </div>
+              <div class="row pt-lg-4">
+                <div className="col-lg-4" style={{ color: "#888" }}>
+                  <h5 className="nlc m-0">Objective:</h5>
+                  <p>Classify drones based on their acoustic properties</p>
+                  <h5 className="nlc m-0">Data:</h5>
+                  <p>
+                    <b>172</b> Samples
+                    <br /> <b>2</b> Classes
+                    <br />
+                    <b>84</b> Drone samples
+                    <br />
+                    <b>88</b> Noisy samples
+                  </p>
+                </div>
+                <div className="ml-cm-map p-0 m-0 col-lg-4 col-12">
                   <div id="cm-container" className="m-auto"></div>
                 </div>
               </div>

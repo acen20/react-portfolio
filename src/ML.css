@@ -2,7 +2,7 @@
   min-height: 100vh;
   background-repeat: none;
   background-size: cover;
-  background-image: url("images/ML-Drones.jpg");
+  background-image: url("images/ML-Drone-5.jpg");
   background-attachment: fidxed;
   background-position: center;
 }
@@ -54,7 +54,7 @@
 
 .ml-project-header {
   bordder-bottom: 2px solid white;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 700;
   opacity: 0.8;
 }
@@ -64,13 +64,15 @@
   background: rgb(11, 22, 40);
   background: radial-gradient(
     circle,
-    rgba(11, 22, 40, 0.8) 0%,
+    rgba(11, 22, 40, 1) 0%,
     rgba(0, 0, 0, 0.96) 100%
   );
+  border-radius: 4px;
 }
 
 .ml-project-desc {
   font-weight: 300;
+  border-bottom: 1px dotted white;
 }
 
 .project-link-icon {
@@ -80,11 +82,12 @@
 
 .ml-project-graph {
   backgrodund-color: black;
+  border-bottom: 1px dotted gray;
 }
 
 #ml-graph {
   margin-top: auto;
-  min-height: 325px;
+  min-height: 300px;
   width: 100% !important;
 }
 

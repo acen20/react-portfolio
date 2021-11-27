@@ -41,6 +41,10 @@ export const ml_projects = [
           show: false,
         },
       },
+      grid: {
+        bottom: "30px",
+        right: "10px",
+      },
       series: [
         {
           name: "Validation Accuracy",
@@ -116,8 +120,6 @@ function generate_cm_options(tp, tn, fp, fn) {
       textStyle: {
         color: "whitesmoke",
       },
-      backgroundColor: "#1b1b1b",
-      width: "100%",
     },
     tooltip: {
       position: "top",
@@ -161,7 +163,7 @@ function generate_cm_options(tp, tn, fp, fn) {
       min: cm_min,
       max: cm_max,
       show: false,
-      color: ["#1b1b1b", "darkred"],
+      color: ["#1b1b1b", "darkblue"],
     },
     series: [
       {
