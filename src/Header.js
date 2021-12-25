@@ -29,13 +29,16 @@ function Header() {
           </div>
           <div className="intro">
             <h3>Ahsen Nazir</h3>
-            <h1>Web & AI Engineer</h1>
+            <h1>Machine Learning Engineer</h1>
             <p>
-              Ahsen Nazir is an entrepreneur and business magnate. He is the
-              founder, CEO, and Chief Engineer at SpaceX; early stage investor,
-              CEO, and Product Architect of Tesla, Inc.; founder of The Boring
-              Company; and co-founder of Neuralink and OpenAI. A
-              centibillionaire, Ahsen is one of the richest people in the world.
+              Ahsen Nazir is a computer scientist. He has worked as a Software
+              Developer for a brief period where he contributed in various
+              departments. He has chosen the domain of Machine Learning for his
+              future endeavours. He is particularly interested in advanced
+              machine learning approaches based on Deep Learning for various
+              modalities. He is currently studying MS Computer Science with Deep
+              Neural Networks as major at Pakistan Institute of Engineering and
+              Applied Sciences (PIEAS) under IT Fellowship.
             </p>
           </div>
           <SectionHeading title={"Connect"} big={0} />
