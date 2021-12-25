@@ -29,6 +29,9 @@ function App() {
       <Header />
       <Projects />
       <ML />
+      <div style="position:fixed; background:black; color:white; bottom:2px; width:100vw; text-align:center">
+        Under Construction
+      </div>
     </div>
   );
 }
