@@ -29,7 +29,17 @@ function App() {
       <Header />
       <Projects />
       <ML />
-      <div style="position:fixed; background:black; color:white; bottom:2px; width:100vw; text-align:center">
+      <div
+        style={{
+          position: "fixed",
+          background: "black",
+          color: "white",
+          bottom: "0",
+          width: "100vw",
+          textAlign: "center",
+          padding: "14px",
+        }}
+      >
         Under Construction
       </div>
     </div>

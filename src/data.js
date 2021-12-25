@@ -5,10 +5,7 @@ export const ml_projects = [
     id: 0,
     name: "Low Flying Objects",
     desc: `Feature extraction of sound signals along with complete CNN
-  model fitting and evaluations. The color list of palette. If
-  no color is set in series, the colors would be adopted
-  sequentially and circularly from this list as the colors of
-  series.`,
+  model fitting and evaluations.`,
     img: "images/ML-Drones.jpg",
     github:
       "https://github.com/acen20/CNN-Tensorflow-Keras-for-sound-classification",

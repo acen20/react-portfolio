@@ -74,6 +74,7 @@
     rgba(255, 255, 255, 1) 0%,
     rgba(215, 215, 215, 1) 100%
   );
+  background: whitesmoke;
 }
 
 .slider-container {
@@ -146,6 +147,14 @@
   height: auto;
 }
 
+.intro-container > .intro > p {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
 .neon-squares {
   display: flex;
   justify-content: space-between;
@@ -163,13 +172,6 @@
 .neon-squares > div:hover {
   box-shadow: 0px 0px 30px lightgreen;
   transition: 0.1s all ease-out;
-}
-
-.intro-container > .intro > p {
-  color: rgba(0, 0, 0, 0.5);
-  text-align: justify;
-  font-size: 18px;
-  line-height: 1.5em;
 }
 
 @media screen and (max-width: 800px) {

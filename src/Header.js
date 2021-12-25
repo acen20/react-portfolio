@@ -29,16 +29,18 @@ function Header() {
           </div>
           <div className="intro">
             <h3>Ahsen Nazir</h3>
-            <h1>Machine Learning Engineer</h1>
+            <h1>ML Engineer</h1>
             <p>
-              Ahsen Nazir is a computer scientist. He has worked as a Software
-              Developer for a brief period where he contributed in various
-              departments. He has chosen the domain of Machine Learning for his
-              future endeavours. He is particularly interested in advanced
-              machine learning approaches based on Deep Learning for various
-              modalities. He is currently studying MS Computer Science with Deep
-              Neural Networks as major at Pakistan Institute of Engineering and
-              Applied Sciences (PIEAS) under IT Fellowship.
+              Ahsen Nazir is a computer scientist. He has worked as a{" "}
+              <code>Software Developer</code> for a brief period where he
+              contributed in various departments. He has chosen the domain of{" "}
+              <code>Machine Learning</code> for his future endeavours. He is
+              particularly interested in advanced machine learning approaches
+              based on <code>Deep Learning for various modalities</code>. He is
+              currently enrolled in <code>MS Computer Science</code> with{" "}
+              <code>Deep Neural Networks</code> as major at Pakistan Institute
+              of Engineering and Applied Sciences <code>(PIEAS)</code> under{" "}
+              <code>IT Fellowship</code>.
             </p>
           </div>
           <SectionHeading title={"Connect"} big={0} />
